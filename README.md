@@ -66,3 +66,8 @@ The application connects to the database using two secure methods:
  • Proxy (secure tunneling)
  • Private IP (faster & more secure)
 
+##  Note
+
+In this lab, the WordPress application was configured to connect to Cloud SQL using both Cloud SQL Proxy and Private IP. While the proxy method provides a secure way to connect by tunneling traffic through localhost (127.0.0.1), it was not required for the final validation in this setup. The application successfully connected using the Private IP address, which enables a direct internal connection within the same VPC network. 
+
+Compared to the proxy approach, Private IP offers better performance due to lower latency and reduces the attack surface by avoiding exposure to external networks. This demonstrates that while Cloud SQL Proxy is useful for secure access from external or different environments, Private IP is the preferred solution when the application and database are hosted within the same region and VPC.
