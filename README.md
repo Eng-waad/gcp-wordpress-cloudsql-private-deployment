@@ -1,4 +1,4 @@
-# gcp-wordpress-cloudsql-private-lap
+# gcp-wordpress-cloudsql-private-deployment
 Deploying WordPress on Google Cloud using Cloud SQL (MySQL), connected securely via Cloud SQL Proxy and Private IP with Compute Engine
 #  WordPress Deployment on GCP using Cloud SQL
 
